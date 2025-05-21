@@ -6,7 +6,7 @@ class Link < ApplicationRecord
 
   before_validation :generate_slug, on: :create
 
-  enum :status, { active: 0, disabled: 1 }
+  enum :status, { active: 0, inactive: 1, archived: 2 }
 
   private
 
