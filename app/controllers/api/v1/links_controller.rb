@@ -19,7 +19,7 @@ class Api::V1::LinksController < ApplicationController
   private
 
   def link_params
-    params.require(:link).permit(:original_url)
+    params.require(:link).permit(:original_url, :expires_at, :status)
   end
 
   def current_user
