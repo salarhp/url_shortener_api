@@ -4,7 +4,6 @@ class Api::V1::LinksController < ApplicationController
   end
 
   def show
-    debugger
     render json: Link.find(params[:id])
   end
 
